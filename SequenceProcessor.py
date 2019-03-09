@@ -6,14 +6,14 @@
 # Version 2.2:
 # Stop codon now follows the IUPAC notation: '*', not '-'.
 
-DNAset = set(['A', 'T', 'G', 'C'])
-DNAXset = set(['A', 'T', 'G', 'C', 'R', 'Y', 'S', 'W', 'K', 'M', 'B', 'D', 'H', 'V', 'N'])
-RNAset = set(['A', 'U', 'G', 'C'])
-RNAXset = set(['A', 'U', 'G', 'C', 'R', 'Y', 'S', 'W', 'K', 'M', 'B', 'D', 'H', 'V', 'N'])
-AAset = set(['G', 'A', 'V', 'L', 'I', 'M', 'P', 'W', 'F', 'S', 'T', 'C', 'Y',\
-             'N', 'Q', 'D', 'E', 'K', 'R', 'H', '*'])
-AAXset = set(['G', 'A', 'V', 'L', 'I', 'M', 'P', 'W', 'F', 'S', 'T', 'C', 'Y',\
-             'N', 'Q', 'D', 'E', 'K', 'R', 'H', 'B', 'Z', 'X', '*'])
+DNAset = {'A', 'T', 'G', 'C'}
+DNAXset = {'A', 'T', 'G', 'C', 'R', 'Y', 'S', 'W', 'K', 'M', 'B', 'D', 'H', 'V', 'N'}
+RNAset = {'A', 'U', 'G', 'C'}
+RNAXset = {'A', 'U', 'G', 'C', 'R', 'Y', 'S', 'W', 'K', 'M', 'B', 'D', 'H', 'V', 'N'}
+AAset = {'G', 'A', 'V', 'L', 'I', 'M', 'P', 'W', 'F', 'S', 'T', 'C', 'Y',\
+             'N', 'Q', 'D', 'E', 'K', 'R', 'H', '*'}
+AAXset = {'G', 'A', 'V', 'L', 'I', 'M', 'P', 'W', 'F', 'S', 'T', 'C', 'Y',\
+             'N', 'Q', 'D', 'E', 'K', 'R', 'H', 'B', 'Z', 'X', '*'}
 
 codonTable = {\
     'TTT':'F', 'TTC':'F',\
